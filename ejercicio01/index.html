@@ -5,6 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="./index.js"></script>
+  <style>
+    label,
+    input {
+      display: block;
+    }
+  </style>
   <title>Ejercicio 01</title>
 </head>
 <body>
@@ -13,21 +19,21 @@
   <form action="./process.php" method="post" id="form">
 
     <label for="name">Nombre</label>
-    <input type="text" name="name" id="name">
+    <input type="text" name="name" id="name" required>
 
     <label for="email">Correo electrónico</label>
-    <input type="email" name="email" id="email">
+    <input type="email" name="email" id="email" required>
 
     <label for="passwd">Contraseña</label>
-    <input type="password" name="passwd" id="passwd">
+    <input type="password" name="passwd" id="passwd" required>
 
     <label for="repeat-passwd">Repita la contraseña</label>
-    <input type="password" name="repeat-passwd" id="repeat-passwd">
+    <input type="password" name="repeat-passwd" id="repeat-passwd" required>
 
     <label for="conditions">Acepto las condiciones</label>
-    <input type="checkbox" name="conditions" id="conditions">
+    <input type="checkbox" name="conditions" id="conditions" required>
 
-    <button>Crear cuenta</button>
+    <button id="submitBtn" disabled>Crear cuenta</button>
   </form>
 
   <a href="../">Volver</a>
