@@ -10,6 +10,9 @@
     input {
       display: block;
     }
+    #error {
+      color: red;
+    }
   </style>
   <title>Ejercicio 01</title>
 </head>
@@ -32,6 +35,8 @@
 
     <label for="conditions">Acepto las condiciones</label>
     <input type="checkbox" name="conditions" id="conditions" required>
+    
+    <p id="error"></p>
 
     <button id="submitBtn" disabled>Crear cuenta</button>
   </form>
